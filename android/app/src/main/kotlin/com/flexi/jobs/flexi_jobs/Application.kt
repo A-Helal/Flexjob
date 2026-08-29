@@ -1,0 +1,25 @@
+package com.flexi.jobs.flexi_jobs
+
+import io.flutter.app.FlutterApplication
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.os.Build
+
+class Application : FlutterApplication() {
+    override fun onCreate() {
+        super.onCreate()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(
+                "high_importance_channel",
+                "High Importance Notifications",
+                NotificationManager.IMPORTANCE_HIGH
+            ).apply {
+                description = "This channel is used for important notifications"
+            }
+
+            val notificationManager = getSystemService(NotificationManager::class.java)
+            notificationManager.createNotificationChannel(channel)
+        }
+    }
+}

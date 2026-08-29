@@ -1,0 +1,84 @@
+{
+    "security.workspace.trust.enabled": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            60
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        }
+    },
+    "dart.warnWhenEditingFilesOutsideWorkspace": false,
+    "dart.renameFilesWithClasses": "prompt",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.formatOnSave": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "dart.openDevTools": "flutter",
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "git.autofetch": true,
+    "dart.devToolsBrowser": "default",
+    "git.enableSmartCommit": true,
+    "editor.fontWeight": "500",
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 14,
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.tree.indent": 12,
+    "screencastMode.fontSize": 60,
+    "explorer.compactFolders": false,
+    "bloc.newBlocTemplate.type": "equatable",
+    "bloc.newCubitTemplate.type": "equatable",
+    "dart.warnWhenEditingFilesInPubCache": false,
+    "dart.showInspectorNotificationsForWidgetErrors": false,
+    "git.supportCancellation": true,
+    "svg.preview.mode": "svg",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "dart.flutterRunAdditionalArgs": [
+        "no-sound-null-safety"
+    ],
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "gitlens.views.remotes.branches.layout": "list",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.settings.applyToAllProfiles": [],
+    "redhat.telemetry.enabled": true,
+    "dart.lineLength": 120,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "",
+        "projectKey": ""
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {},
+    "editor.smoothScrolling": false,
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.enableExperiments": false,
+    "workbench.startupEditor": "none",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 0,
+    "window.autoDetectHighContrast": false,
+    "workbench.preferredDarkColorTheme": "Abyss",
+    "workbench.preferredHighContrastColorTheme": "Abyss",
+    "workbench.colorTheme": "Default Dark+",
+    "git.confirmSync": false,
+    "terminal.integrated.commandsToSkipShell": [
+        ""
+    ],
+    "search.exclude": {
+        "**/.history": true
+    }
+}

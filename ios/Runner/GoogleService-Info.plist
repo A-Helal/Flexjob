@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>API_KEY</key>
+        <string>AIzaSyC5m286EsmxKvdwIyy2rEw76fvRIiHs1jA</string>
+        <key>GCM_SENDER_ID</key>
+        <string>284711001892</string>
+        <key>PLIST_VERSION</key>
+        <string>1</string>
+        <key>BUNDLE_ID</key>
+        <string>com.flexi.jobs.flexiJobs</string>
+        <key>PROJECT_ID</key>
+        <string>flexijob-2bcec</string>
+        <key>STORAGE_BUCKET</key>
+        <string>flexijob-2bcec.firebasestorage.app</string>
+        <key>IS_ADS_ENABLED</key>
+        <false></false>
+        <key>IS_ANALYTICS_ENABLED</key>
+        <false></false>
+        <key>IS_APPINVITE_ENABLED</key>
+        <true></true>
+        <key>IS_GCM_ENABLED</key>
+        <true></true>
+        <key>IS_SIGNIN_ENABLED</key>
+        <true></true>
+        <key>GOOGLE_APP_ID</key>
+        <string>1:284711001892:ios:b65715510ffa88558a1db1</string>
+    </dict>
+</plist>

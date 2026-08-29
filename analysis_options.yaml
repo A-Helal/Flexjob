@@ -1,0 +1,54 @@
+include: package:lint/analysis_options.yaml
+
+# Not happy with the default? Customize the rules depending on your needs. 
+# Here are some examples:
+linter:
+  rules:
+    # Make constructors the first thing in every class
+    sort_constructors_first: true
+
+    # The new tabs vs. spaces. Choose wisely
+    # prefer_single_quotes: true
+    # prefer_double_quotes: true
+
+    # Good packages document everything
+    public_member_api_docs: false
+
+    # Blindly follow the Flutter code style, which prefers types everywhere
+    always_specify_types: true
+
+    # Back to the 140s
+    lines_longer_than_80_chars: false
+
+
+    unnecessary_getters_setters : false
+    non_constant_identifier_names : false
+    prefer_const_literals_to_create_immutables : false
+    avoid_positional_boolean_parameters: false
+    argument_type_not_assignable_to_error_handler: false
+    avoid_function_literals_in_foreach_calls: false
+    prefer_function_declarations_over_variables: false
+    unnecessary_raw_strings: false
+    prefer_interpolation_to_compose_strings: false
+    must_be_immutable: false
+    non_bool_operand: false
+    avoid_bool_literals_in_conditional_expressions: false
+    overridden_fields : false
+    parameter_assignments : false
+    avoid_escaping_inner_quotes: false
+    close_sinks: false
+
+ 
+    # Use parameter order as in json response
+    always_put_required_named_parameters_first: false
+
+    # Util classes are awesome!
+    avoid_classes_with_only_static_members: false
+
+ 
+
+    # Util classes are awesome!
+    avoid_returning_null_for_future: true
+    comment_references: true
+    prefer_if_elements_to_conditional_expressions: false
+    

@@ -1,0 +1,486 @@
+{
+	"New Response Model": {
+		"prefix": "respModel",
+		"body": [
+			"import 'package:json_annotation/json_annotation.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"",
+			"part '${TM_FILENAME_BASE}.g.dart';",
+			"",
+			"@JsonSerializable()",
+			"class ${1:ModelName}Model extends ${1:ModelName}Entity {",
+			"    ${1:ModelName}Model({",
+			"    ",
+			"  });",
+			"  factory  ${1:ModelName}Model.fromJson(Map<String, dynamic> json) =>",
+			"      _$${1:ModelName}ModelFromJson(json);",
+			"",
+			"  Map<String, dynamic> toJson() => _$${1:ModelName}ModelToJson(this);",
+			"}",
+			"",
+			"@JsonSerializable()",
+			"class ${1:ModelName}ResponseModel extends BaseEntity<${2:TypeHere}> {",
+			"  const  ${1:ModelName}ResponseModel({",
+			"    super.statusCode,",
+			"    super.data,",
+			"    super.message,",
+			"    super.totalRecords,",
+			"    super.hasMorePages,",
+			"  });",
+			"  factory ${1:ModelName}ResponseModel.fromJson(Map<String, dynamic> json) =>",
+			"      _$${1:ModelName}ResponseModelFromJson(json);",
+			"",
+			"  Map<String, dynamic> toJson() => _$${1:ModelName}ResponseModelToJson(this);",
+			"}",
+			""
+		],
+		"description": "New Response Model"
+	},
+	"New Response Model without Base": {
+		"prefix": "respModelNoBase",
+		"body": [
+			"import 'package:json_annotation/json_annotation.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"",
+			"part '${TM_FILENAME_BASE}.g.dart';",
+			"",
+			"@JsonSerializable()",
+			"class ${1:ModelName}ResponseModel extends ${1:ModelName}Entity {",
+			"    ${1:ModelName}ResponseModel({",
+			"    ",
+			"  });",
+			"  factory  ${1:ModelName}ResponseModel.fromJson(Map<String, dynamic> json) =>",
+			"      _$${1:ModelName}ResponseModelFromJson(json);",
+			"",
+			"  Map<String, dynamic> toJson() => _$${1:ModelName}ResponseModelToJson(this);",
+			"}",
+			"",
+		],
+		"description": "New Response Model"
+	},
+	"New Request Model": {
+		"prefix": "reqModel",
+		"body": [
+			"import 'package:json_annotation/json_annotation.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"",
+			"part '${TM_FILENAME_BASE}.g.dart';",
+			"",
+			"@JsonSerializable()",
+			"class ${1:ModelName}RequestModel{",
+			"    ${1:ModelName}RequestModel({",
+			"    ",
+			"  });",
+			"  factory  ${1:ModelName}RequestModel.fromJson(Map<String, dynamic> json) =>",
+			"      _$${1:ModelName}RequestModelFromJson(json);",
+			"",
+			"  Map<String, dynamic> toJson() => _$${1:ModelName}RequestModelToJson(this);",
+			"}",
+		],
+		"description": "New Request Model"
+	},
+	"New Abstract Repository": {
+		"prefix": "absRepo",
+		"body": [
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"",
+			"abstract class ${RepoName}Repository {",
+			"",
+			" ",
+			"",
+			"  ",
+			"}"
+		],
+		"description": "New Abstract Repository"
+	},
+	"New Dartz Function Without parmas in absrtact repo": {
+		"prefix": "dartzNoAbs",
+		"body": [
+			"Future<CustomResponseType<BaseEntity<${1:TypeHere}>>> ${2:FunName}( ",
+			" );"
+		],
+		"description": "New Either"
+	},
+	"New Dartz Function With parmas absrtact repo": {
+		"prefix": "dartzFunAbs",
+		"body": [
+			"Future<CustomResponseType<BaseEntity<${1:TypeHere}>>> ${2:FunName}({ ",
+			" required ${3:ParamType} ${4:paramInstance} });"
+		],
+		"description": "New Either"
+	},
+	"New Dartz Function With parmas with no base absrtact repo": {
+		"prefix": "dartzFunAbsNoBase",
+		"body": [
+			"Future<CustomResponseType< ${1:TypeHere}>> ${2:FunName}({ ",
+			" required ${3:ParamType} ${4:paramInstance} });"
+		],
+		"description": "New Either"
+	},
+	"New Dartz Function Without parmas in repo imp": {
+		"prefix": "dartzFunNoImp",
+		"body": [
+			"Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}( ",
+			" )async{}"
+		],
+		"description": "New Either"
+	},
+	"New Dartz Function With parmas in repo imp": {
+		"prefix": "dartzFunImp",
+		"body": [
+			"Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}({ ",
+			" required ${3:ParamType} ${4:paramInstance} })async{}"
+		],
+		"description": "New Either"
+	},
+	"New Dartz Function With parmas in dataSources": {
+		"prefix": "dartzFunDataSources",
+		"body": [
+			"Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}({ ",
+			" required ${3:ParamType} ${4:paramInstance} });"
+		],
+		"description": "New Either"
+	},
+	"New Dartz Function Without parmas in dataSources": {
+		"prefix": "dartzFunNoDataSources",
+		"body": [
+			"Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}();"
+		],
+		"description": "New Either"
+	},
+	"New UseCaseNoParam": {
+		"prefix": "noParamUseCase",
+		"body": [
+			"import 'package:injectable/injectable.dart';",
+			"import 'package:flexiJobs/core/domain/usecase/base_usecase.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			" ",
+			" ",
+			"",
+			"@injectable",
+			"class ${1:UseCaseName}UseCase implements UseCaseNoParam<BaseEntity<${2:TypeHere}>> {",
+			"  ${1:UseCaseName}UseCase({required this.${4:repoInstance}Repository});",
+			"  final ${3:NameRepo}Repository ${4:repoInstance}Repository;",
+			"",
+			"  @override",
+			"   Future<CustomResponseType<BaseEntity<${2:TypeHere}>>> call() async {",
+			"    return ${4:repoInstance}Repository.${5:FunName}();",
+			"  }",
+			"}",
+			""
+		],
+		"description": "New UseCaseParam"
+	},
+	"New UseCaseNoParamsNoBase": {
+		"prefix": "noParamNoBaseUseCase",
+		"body": [
+			"import 'package:injectable/injectable.dart';",
+			"import 'package:flexiJobs/core/domain/usecase/base_usecase.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			" ",
+			" ",
+			"",
+			"@injectable",
+			"class ${1:UseCaseName}UseCase implements UseCaseNoParam< ${2:TypeHere}> {",
+			"  ${1:UseCaseName}UseCase({required this.${4:repoInstance}Repository});",
+			"  final ${3:NameRepo}Repository ${4:repoInstance}Repository;",
+			"",
+			"  @override",
+			"   Future<CustomResponseType<${2:TypeHere}>> call() async {",
+			"    return ${4:repoInstance}Repository.${5:FunName}();",
+			"  }",
+			"}",
+			""
+		],
+		"description": "New UseCaseParam"
+	},
+	"New useCase": {
+		"prefix": "useCase",
+		"body": [
+			" import 'package:injectable/injectable.dart';",
+			"import 'package:flexiJobs/core/domain/usecase/base_usecase.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"",
+			"",
+			"@injectable",
+			"class ${1:UseCaseName}UseCase implements UseCase<BaseEntity<${2:TypeHere}>, ${3:paramsType}> {",
+			"  ${1:UseCaseName}UseCase({required this.${5:repoInstance}Repository});",
+			"  final ${4:NameRepo}Repository ${5:repoInstance}Repository;",
+			"",
+			"  @override",
+			"  Future<CustomResponseType<BaseEntity<${2:TypeHere}>>> call(",
+			"     ${3:paramsType}  ${6:paramsInstaneHere},",
+			"  ) async {",
+			"    return ${5:repoInstance}Repository.${7:FunName}(",
+			"     ${6:paramsInstaneHere}:${6:paramsInstaneHere},",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "New useCase"
+	},
+	"New useCase No Base": {
+		"prefix": "useCaseNoBase",
+		"body": [
+			" import 'package:injectable/injectable.dart';",
+			"import 'package:flexiJobs/core/domain/usecase/base_usecase.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"",
+			"",
+			"@injectable",
+			"class ${1:UseCaseName}UseCase implements UseCase< ${2:TypeHere}, ${3:paramsType}> {",
+			"  ${1:UseCaseName}UseCase({required this.${5:repoInstance}Repository});",
+			"  final ${4:NameRepo}Repository ${5:repoInstance}Repository;",
+			"",
+			"  @override",
+			"  Future<CustomResponseType< ${2:TypeHere}>> call(",
+			"     ${3:paramsType}  ${6:paramsInstaneHere},",
+			"  ) async {",
+			"    return ${5:repoInstance}Repository.${7:FunName}(",
+			"     ${6:paramsInstaneHere}:${6:paramsInstaneHere},",
+			"    );",
+			"  }",
+			"}",
+			""
+		],
+		"description": "New useCase"
+	},
+	"New Repository imp": {
+		"prefix": "repoImp",
+		"body": [
+			"import 'package:injectable/injectable.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			" ",
+			"@Injectable(as: ${1:RepoName}Repository)",
+			"class ${1:RepoName}RepositoryImp implements ${1:RepoName}Repository {",
+			" ${1:RepoName}RepositoryImp({",
+			"    required this. ${3:dataSourceInstance}RemoteDataSource,",
+			"  });",
+			"  final ${2:dataSourceName}RemoteDataSource ${3:dataSourceInstance}RemoteDataSource;",
+			" ",
+			"}",
+			""
+		],
+		"description": "New Repository imp"
+	},
+	"New DataSource": {
+		"prefix": "dataSorure",
+		"body": [
+			"import 'package:injectable/injectable.dart';",
+			"import 'package:dartz/dartz.dart';",
+			"import 'package:flexiJobs/core/network/api/network_apis_constants.dart';",
+			"import 'package:flexiJobs/core/network/network_helper.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"import 'package:flexiJobs/error/failure.dart';",
+			"",
+			"abstract class ${1:DataSourceName}RemoteDataSource {",
+			"}",
+			"",
+			"@Injectable(as:  ${1:DataSourceName}RemoteDataSource)",
+			"class ${1:DataSourceName}RemoteDataSourceImpl implements ${1:DataSourceName}RemoteDataSource {",
+			"   ${1:DataSourceName}RemoteDataSourceImpl(this.networkHelper);",
+			"  final NetworkHelper networkHelper;",
+			"",
+			"  ",
+			"}",
+			""
+		],
+		"description": "New DataSource"
+	},
+	"New postFunction": {
+		"prefix": "postFunNo",
+		"body": [
+			" ",
+			"  @override",
+			"  Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}() async {",
+			"    ({dynamic response, bool success}) result =",
+			"        await networkHelper.post(path: ApiConstants.${3:ApiPathName},data:${4:BodyHere});",
+			"",
+			"    if (result.success) {",
+			"      return right(${1:TypeHere}.fromJson( result.response));",
+			"    } else {",
+			"      return left(ServerFailure(message: result.response as String));",
+			"    }",
+			"  }",
+			""
+		],
+		"description": "New postFunction"
+	},
+	"New postFunction with params": {
+		"prefix": "postFun",
+		"body": [
+			" ",
+			"  @override",
+			"  Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}({}) async {",
+			"    ({dynamic response, bool success}) result =",
+			"        await networkHelper.post(path: ApiConstants.${3:ApiPathName},data:${4:BodyHere});",
+			"",
+			"    if (result.success) {",
+			"      return right(${1:TypeHere}.fromJson( result.response));",
+			"    } else {",
+			"      return left(ServerFailure(message: result.response as String));",
+			"    }",
+			"  }",
+			""
+		],
+		"description": "New postFunction"
+	},
+	"New getFunction with params": {
+		"prefix": "getFun",
+		"body": [
+			" ",
+			"  @override",
+			"  Future<CustomResponseType<${1:TypeHere}>> ${2:FunName}({}) async {",
+			"    ({dynamic response, bool success}) result =",
+			"        await networkHelper.get(path: ApiConstants.${3:ApiPathName},queryParams:${4:BodyHere});",
+			"",
+			"    if (result.success) {",
+			"      return right(${1:TypeHere}.fromJson( result.response));",
+			"    } else {",
+			"      return left(ServerFailure(message: result.response as String));",
+			"    }",
+			"  }",
+			""
+		],
+		"description": "New postFunction"
+	},
+	"New Entity": {
+		"prefix": "entity",
+		"body": [
+			" import 'package:equatable/equatable.dart';",
+			"",
+			"class ${1:NameEntity}Entity extends Equatable {",
+			"  const ${1:NameEntity}Entity({",
+			"   ",
+			"  });",
+			"",
+			"  ",
+			"",
+			"  @override",
+			"  List<Object?> get props => <Object?>[];",
+			"}",
+			""
+		],
+		"description": "New Entity"
+	},
+	"New funCubit without params": {
+		"prefix": "funCubitNo",
+		"body": [
+			"  Future<void> ${1:FunName}(   ) async {",
+			"    emit(${5:CubitName}LoadingState());",
+			"    final CustomResponseType<BaseEntity<${3:TypeHere}>>",
+			"        eitherPackagesOrFailure = await ${4:UseCaseName}();",
+			"",
+			"    eitherPackagesOrFailure.fold((Failure failure) {  emit(${5:CubitName}ErrorState(",
+			"  message: FailureToMassage().mapFailureToMessage(failure)));},",
+			"        (BaseEntity<${3:TypeHere}> response) {",
+			"      ",
+			"    });",
+			"  }",
+		],
+		"description": "New funCubit without params"
+	},
+	"New funCubit": {
+		"prefix": "funCubit",
+		"body": [
+			"  Future<void> ${1:FunName}({${2:Param}}) async {",
+			"    final CustomResponseType<BaseEntity<${3:TypeHere}>>",
+			"        eitherPackagesOrFailure = await ${4:UseCaseName}();",
+			"",
+			"    eitherPackagesOrFailure.fold((Failure failure) {  emit(${5:CubitName}ErrorState(",
+			"  message: FailureToMassage().mapFailureToMessage(failure)));},",
+			"        (BaseEntity<${3:TypeHere}> response) {",
+			"      ",
+			"    });",
+			"  }",
+		],
+		"description": "New funCubit"
+	},
+	"New funCubit NoBaseNoBase": {
+		"prefix": "funCubit",
+		"body": [
+			"  Future<void> ${1:FunName}({${2:Param}}) async {",
+			"    final CustomResponseType< ${3:TypeHere}>",
+			"        eitherPackagesOrFailure = await ${4:UseCaseName}();",
+			"",
+			"    eitherPackagesOrFailure.fold((Failure failure) {  emit(${5:CubitName}ErrorState(",
+			"  message: FailureToMassage().mapFailureToMessage(failure)));},",
+			"        ( ${3:TypeHere} response) {",
+			"      ",
+			"    });",
+			"  }",
+		],
+		"description": "New funCubit"
+	},
+	"New cubit state": {
+		"prefix": "cubitState",
+		"body": [
+			"part of '${TM_FILENAME_BASE}.dart';",
+			"",
+			"abstract class ${1:StateName}State  {",
+			"}",
+			"",
+			"class ${1:StateName}InitialState extends ${1:StateName}State {}",
+			"class ${1:StateName}LoadingState extends ${1:StateName}State {}",
+			"class ${1:StateName}ReadyState extends ${1:StateName}State {}",
+			"class ${1:StateName}ErrorState extends ${1:StateName}State {",
+			"${1:StateName}ErrorState({",
+			" required this.message,",
+			"});",
+			" final String message;",
+			"}",
+			""
+		],
+		"description": "New cubit state"
+	},
+	"New Cubit": {
+		"prefix": "cubit",
+		"body": [
+			"import 'package:bloc/bloc.dart';",
+			"import 'package:equatable/equatable.dart';",
+			"import 'package:flexiJobs/core/network/base_handling.dart';",
+			"import 'package:flexiJobs/error/failure.dart';",
+			" import 'package:flexiJobs/features/shared/entity/base_entity.dart';",
+			"",
+			"part  '${TM_FILENAME_BASE}.dart';",
+			"",
+			"@injectable",
+			"class ${1:NameCubit}Cubit extends Cubit<${1:NameCubit}State> {",
+			" ${1:NameCubit}Cubit(",
+			"",
+			"  ) : super(${1:NameCubit}InitialState());",
+			"}",
+			""
+		],
+		"description": ""
+	},
+	"statefulRoutePage": {
+		"prefix": "statefulRoutePage",
+		"body": [
+			"import 'package:auto_route/auto_route.dart';",
+			"import 'package:flutter/material.dart';",
+			"@RoutePage()",
+			"class ${1:className}Screen extends StatefulWidget {",
+			"  const ${1:className}Screen({super.key});",
+			"",
+			"  @override",
+			"  State<${1:className}Screen> createState() => _${1:className}ScreenState();",
+			"}",
+			"",
+			"class _${1:className}ScreenState extends State<${1:className}Screen> {",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return const Placeholder();",
+			"  }",
+			"}"
+		],
+		"description": ""
+	}
+}
