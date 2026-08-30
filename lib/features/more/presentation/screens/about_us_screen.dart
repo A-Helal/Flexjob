@@ -286,7 +286,7 @@ class _SocialIconButton extends StatelessWidget {
     required this.url,
   });
 
-  final IconData icon;
+  final FaIconData icon;
   final Color backgroundColor;
   final String semanticLabel;
   final String url;
